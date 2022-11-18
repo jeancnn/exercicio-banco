@@ -22,12 +22,12 @@ def menu():
                 print("Opção inválida")
             
         elif aux.upper() == "L":
-            camada2 = input("Qual seria o tipo de cadastro: \nPJ ou PF\n:> ").upper()
+            camada2 = input("Qual seria o tipo de conta: \nPJ ou PF\n:> ").upper()
             if camada2 == "PJ":
-                pass
+                listarContas("PJ")
 
             elif camada2 == "PF":
-                listarContas()
+                listarContas("PF")
         else:
             break
         
